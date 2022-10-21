@@ -1,0 +1,13 @@
+{% load static %}
+
+<li>
+    <article class='post'>
+        <a href = '{% url 'post-detail-page' 'mia' %}'>
+            <img src='{% static 'blog/images/Mia.JPG' %}' alt='Baby Mia' />
+            <div class = 'post_content'>
+                <h3>Baby Mia</h3>
+                <p>I enjoy every moment staying with my little baby girl.</p>
+            </div>
+        </a>
+    </article>
+</li>

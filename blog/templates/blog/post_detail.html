@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}
+    This Post Title
+{% endblock %}
+
+{% block css_files %}
+    <link rel='stylesheet' href='{% static 'blog/post_detail.css' %}'>        
+{% endblock %}
+
+{% block content %}
+    <section id='summary'>
+        <h2>Post Title</h2>
+        <article>
+            <img src='{% static 'blog/images/Mia.JPG' %}' alt='Baby Mia' />
+            <address>By Shuang</address>
+            <div>
+                Last updated on <time>Oct 10th</time>
+            </div>
+        </article>
+    </section>
+
+    <main>
+        <p>
+            Sample post body paragraph 1
+        </p>
+        <p>
+            Sample post body paragraph 2
+        </p>
+        <p>
+            Sample post body paragraph 3
+        </p>
+        <p>
+            Sample post body paragraph 4
+        </p>
+    </main>
+
+{% endblock %}
